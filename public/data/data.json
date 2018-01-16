@@ -1,0 +1,55 @@
+{
+    "audioFile": "audio/her-majesty.mp3",
+    "images": [{
+            "id": "1",
+            "ts": "0",
+            "src": "images/notes.jpg"
+        },
+        {
+            "id": "2",
+            "ts": "2092",
+            "src": "images/orch.jpeg"
+            
+        },
+        {
+            "id": "3",
+            "ts": "3951",
+            "src": "images/golda.jpg"
+        },
+        {
+            "id": "4",
+            "ts": "6052",
+            "src": "images/nice-girl.gif"
+        },
+        {
+            "id": "5",
+            "ts": "11062",
+            "src": "images/melania.png"
+        },
+        {
+            "id": "6",
+            "ts": "14523",
+            "src": "images/olive.jpeg"
+        },
+        {
+            "id": "7",
+            "ts": "16523",
+            "src": "images/wendy.jpg"
+        },
+        {
+            "id": "8",
+            "ts": "19123",
+            "src": "images/archer.jpg"
+        },
+        {
+            "id": "9",
+            "ts": "21023",
+            "src": "images/lisa.png"
+        },
+        {
+            "id": "10",
+            "ts": "23023",
+            "src": "images/cat.jpg"
+        }
+    ]
+}
