@@ -12,6 +12,7 @@ class App extends Component {
     lastPauseTs: 0,
     //each time the audio is paused the pause gap is added to this prop
     accumulatedPausedTime:0,
+    //time which is left before the slide change in case it is paused
     timeLeftForPausedSlide:0
   }
 
@@ -34,6 +35,7 @@ class App extends Component {
     })
   }
 
+
   fetchData() {
     return fetch('./data/data.json').then(response => {
       const contentType = response
@@ -44,6 +46,8 @@ class App extends Component {
       }
     })
   }
+
+
 
   togglePlay() {
     if (this.state.isPlaying) {
@@ -56,12 +60,13 @@ class App extends Component {
     })
   }
 
+
   onPlay(e){
     //ms gap between latest pause and current play
     const playPauseGap = Number(e.timeStamp) - Number(this.state.lastPauseTs);
     this.setState({accumulatedPausedTime: this.state.accumulatedPausedTime + playPauseGap});
 
-
+    //display current slide with the time left before pause
     if(this.state.timeLeftForPausedSlide){setTimeout(
       this.changeSlide.bind(this),
       Number(this.state.timeLeftForPausedSlide)
